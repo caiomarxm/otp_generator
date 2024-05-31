@@ -6,4 +6,4 @@ from otp_generator.two_factor.generate_otp import generate_totp_from_secret
 def from_secret(
     secret: str
 ):
-    return generate_totp_from_secret(secret=secret)
+    click.echo(generate_totp_from_secret(secret=secret))
